@@ -51,5 +51,17 @@
     "webpack": "^1.7.2",
     "webpack-core": "^0.5.0",
     "webpack-dev-server": "^1.7.0"
+<<<<<<< HEAD
+=======
+  },
+  "dependencies": {
+    "angular": "^1.5.0-rc.0",
+    "angular-animate": "^1.5.0-rc.0",
+    "angular-aria": "^1.5.0-rc.0",
+    "angular-material": "^1.0.1",
+    "angular-messages": "^1.5.0-rc.0",
+    "angular-ui-router": "^1.0.0-alpha0",
+    "express": "^4.13.4"
+>>>>>>> b362a43edde6eb1adb5078c6be837006b5c088ef
   }
 }
