@@ -6,9 +6,9 @@
   "repository": "https://github.com/kentcdodds/webpack-angular.git",
   "scripts": {
     "test": "NODE_ENV=test karma start",
-    "start": "node node_modules/.bin/webpack-dev-server --content-base app",
+    "start": "node node_modules/.bin/webpack && cp app/index.html dist/index.html",
     "build": "NODE_ENV=production node node_modules/.bin/webpack && cp app/index.html dist/index.html",
-    "postinstall": "node_modules/.bin/webpack"
+    "postinstall": "node node_modules/.bin/webpack && cp app/index.html dist/index.html"
   },
   "keywords": [
     "webpack",
