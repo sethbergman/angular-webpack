@@ -7,7 +7,7 @@
   "scripts": {
     "test": "NODE_ENV=test karma start",
     "start": "http-server",
-    "postinstall": "NODE_ENV=production node node_modules/.bin/webpack && cp app/index.html dist/index.html"
+    "postinstall": "NODE_ENV=production node node_modules/.bin/webpack"
   },
   "keywords": [
     "webpack",
