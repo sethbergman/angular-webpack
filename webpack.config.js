@@ -25,7 +25,7 @@ var config = {
 };
 
 if (process.env.NODE_ENV === 'production') {
-  config.output.path = __dirname + '/dist';
+  config.output.path = __dirname + '/';
   config.plugins.push(new webpack.optimize.UglifyJsPlugin());
   config.devtool = 'source-map';
 }
