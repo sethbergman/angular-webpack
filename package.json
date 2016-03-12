@@ -2,12 +2,12 @@
   "name": "webpack-angular",
   "version": "1.0.0",
   "description": "Example of using webpack with an angular project for an egghead.io lesson",
-  "main": "index.js",
+  "main": "app/index.js",
   "repository": "https://github.com/kentcdodds/webpack-angular.git",
   "scripts": {
     "test": "NODE_ENV=test karma start",
-    "start": "node node_modules/.bin/webpack",
-    "postinstall": "NODE_ENV=production node node_modules/.bin/webpack"
+    "start": "node node_modules/.bin/webpack && cp app/index.html dist/index.html",
+    "postinstall": "NODE_ENV=production node node_modules/.bin/webpack && cp app/index.html dist/index.html"
   },
   "keywords": [
     "webpack",
