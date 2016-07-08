@@ -52,7 +52,7 @@
     "webpack": "^1.7.2",
     "webpack-core": "^0.5.0",
     "webpack-dev-server": "^1.7.0",
-    "snyk": "1.16.0"
+    "snyk": "^1.17.0"
   },
   "snyk": true
 }
