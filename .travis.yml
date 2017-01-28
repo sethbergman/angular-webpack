@@ -8,5 +8,7 @@ node_js:
   - "0.12"
   - "0.10"
 
-scripts:
+script:
+  - "npm install coveralls"
   - "npm i"
+after_script: "make test-coveralls"
