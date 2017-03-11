@@ -1,9 +1,9 @@
 {
-  "name": "webpack-angular",
+  "name": "angular-webpack",
   "version": "1.0.0",
-  "description": "Example of using webpack with an angular project for an egghead.io lesson",
+  "description": "Example of using webpack with an angular project",
   "main": "app/index.js",
-  "repository": "https://github.com/kentcdodds/webpack-angular.git",
+  "repository": "https://github.com/sethbergman/angular-webpack.git",
   "scripts": {
     "test": "NODE_ENV=test karma start",
     "start": "http-server",
@@ -14,9 +14,9 @@
   "keywords": [
     "webpack",
     "angular",
-    "egghead.io"
+    "ES6"
   ],
-  "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kent.doddsfamily.us)",
+  "author": "Seth Bergman and John Hampton",
   "license": "MIT",
   "dependencies": {
     "angular": "^1.5.0-rc.0",
@@ -57,5 +57,8 @@
     "webpack-core": "^0.5.0",
     "webpack-dev-server": "^1.7.0"
   },
-  "snyk": true
+  "snyk": true,
+  "devDependencies": {
+    "chai": "^3.5.0"
+  }
 }

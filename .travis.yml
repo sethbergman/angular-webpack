@@ -9,6 +9,18 @@ node_js:
   - "0.10"
 
 script:
+  - "npm i karma"
+  - "NODE_ENV=test karma start"
   - "npm install coveralls"
   - "npm i"
-after_script: "make test-coveralls"
+  - "NODE_ENV=production node node_modules/.bin/webpack && cp app/index.html public/index.html"
+  - "npm i snyk-protect"
+
+after_script:
+  - "make test-coveralls"
+  - "npm run snyk-protect"
+
+notifications:
+  slack: stackriot:gLki5FxZeKzaSziW26HP0DJm
+
+before_install: if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
