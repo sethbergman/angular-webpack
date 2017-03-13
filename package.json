@@ -8,8 +8,8 @@
     "test": "NODE_ENV=test karma start",
     "start": "http-server",
     "build": "NODE_ENV=production node node_modules/.bin/webpack && cp app/index.html public/index.html",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "snyk": "snyk protect",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "webpack",
@@ -57,7 +57,7 @@
     "webpack-core": "^0.5.0",
     "webpack-dev-server": "^1.7.0"
   },
-  "snyk": true,
+  "snyk": false,
   "devDependencies": {
     "chai": "^3.5.0"
   }
