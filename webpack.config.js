@@ -31,3 +31,26 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 module.exports = config;
+
+
+// var path = require('path');
+// require('./app/index.js');
+//
+// module.exports = {
+//     entry: {
+//         test: path.join(__dirname, "index.js")
+//     },
+//     module: {
+//         loaders: [
+//             {
+//               test: /\.html$/,
+//               loader: "../../index.js"
+//             }
+//         ]
+//     },
+//     output: {
+//         path: __dirname,
+//         publicPath: "/",
+//         filename: "bundle.js"
+//     }
+// };

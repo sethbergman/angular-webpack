@@ -1,5 +1,5 @@
-var path = require('path');
-var webpackConfig = require('./webpack.config');
+const path = require('path');
+let webpackConfig = require('./webpack.config');
 var entry = path.resolve(webpackConfig.context, webpackConfig.entry);
 var preprocessors = {};
 preprocessors[entry] = ['webpack'];
@@ -64,7 +64,7 @@ module.exports = function(config) {
     singleRun: false,
 
     plugins: [
-      require('karma-webpack'),
+      'karma-webpack',
       'karma-chai',
       'karma-mocha',
       'karma-chrome-launcher'
