@@ -5,9 +5,8 @@
   "main": "app/index.js",
   "repository": "https://github.com/sethbergman/angular-webpack.git",
   "scripts": {
-    "test": "NODE_ENV=test karma start",
     "start": "http-server",
-    "build": "NODE_ENV=production node node_modules/.bin/webpack && cp app/index.html public/index.html",
+    "build": "node_modules/.bin/webpack && cp app/index.html public/index.html",
     "snyk": "snyk protect",
     "prepublish": "npm run build"
   },
