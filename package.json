@@ -8,7 +8,8 @@
     "start": "http-server",
     "build": "node_modules/.bin/webpack && cp app/index.html public/index.html",
     "snyk": "snyk protect",
-    "prepublish": "npm run build"
+    "prepublish": "npm run snyk-protect && npm run build",
+    "snyk-protect": "snyk protect"
   },
   "keywords": [
     "webpack",
@@ -47,7 +48,7 @@
     "ng-annotate-loader": "^0.1.0",
     "nib": "^1.1.0",
     "raw-loader": "^0.5.1",
-    "snyk": "^1.17.0",
+    "snyk": "^1.30.1",
     "style-loader": "^0.8.3",
     "stylus": "0.54.3",
     "stylus-loader": "^0.6.0",
@@ -56,7 +57,7 @@
     "webpack-core": "^0.5.0",
     "webpack-dev-server": "^1.7.0"
   },
-  "snyk": false,
+  "snyk": true,
   "devDependencies": {
     "chai": "^3.5.0"
   }
