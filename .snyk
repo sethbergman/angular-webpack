@@ -31,3 +31,22 @@ patch:
         patched: '2017-08-02T08:49:00.036Z'
     - karma > socket.io > socket.io-client > socket.io-parser > debug > ms:
         patched: '2017-08-02T08:49:00.036Z'
+  'npm:debug:20170905':
+    - mocha > debug:
+        patched: '2017-09-29T06:03:17.557Z'
+    - karma > socket.io > debug:
+        patched: '2017-09-29T06:03:17.557Z'
+    - karma > socket.io > engine.io > debug:
+        patched: '2017-09-29T06:03:17.557Z'
+    - karma > socket.io > socket.io-adapter > debug:
+        patched: '2017-09-29T06:03:17.557Z'
+    - karma > socket.io > socket.io-client > debug:
+        patched: '2017-09-29T06:03:17.557Z'
+    - karma > socket.io > socket.io-client > engine.io-client > debug:
+        patched: '2017-09-29T06:03:17.557Z'
+    - karma > socket.io > socket.io-parser > debug:
+        patched: '2017-09-29T06:03:17.557Z'
+    - karma > socket.io > socket.io-adapter > socket.io-parser > debug:
+        patched: '2017-09-29T06:03:17.557Z'
+    - karma > socket.io > socket.io-client > socket.io-parser > debug:
+        patched: '2017-09-29T06:03:17.557Z'
