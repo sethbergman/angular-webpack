@@ -53,7 +53,7 @@
     "stylus": "0.54.3",
     "stylus-loader": "^0.6.0",
     "url-loader": "^0.5.5",
-    "webpack": "^1.7.2",
+    "webpack": "^2.2.0",
     "webpack-core": "^0.5.0",
     "webpack-dev-server": "^1.7.0"
   },
